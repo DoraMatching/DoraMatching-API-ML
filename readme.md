@@ -15,4 +15,10 @@ pip3 install flask flask_cors requests nltk bs4 pandas matplotlib regex scipy sk
 cp ./vietnamese_dash $HOME/nltk_data/corpora/stopwords/vietnamese_dash
 ```
 9. Run the ML API `python3 app.py`
-10. Test 
+10. Test
+
+## For Raspbian OS
+
+```shell
+sudo apt-get install libatlas-base-dev
+```
