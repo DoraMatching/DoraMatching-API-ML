@@ -23,7 +23,7 @@ cp ./vietnamese_dash $HOME/nltk_data/corpora/stopwords/vietnamese_dash
 sudo apt-get install libatlas-base-dev
 ```
 
-# For Vagrant box
+## For Vagrant box
 
 Recommend: cpus>=2, memory>=2GB
 
