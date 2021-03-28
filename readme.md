@@ -22,3 +22,35 @@ cp ./vietnamese_dash $HOME/nltk_data/corpora/stopwords/vietnamese_dash
 ```shell
 sudo apt-get install libatlas-base-dev
 ```
+
+# For Vagrant box
+
+Recommend: cpus>=2, memory>=2GB
+
+```ruby
+# Vagranfile
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+    config.vm.box = "tranphuquy19/doramatching-api-ml"
+    config.vm.box_version = "1.0.0"
+    config.vm.network "private_network", ip: "172.16.10.107"
+    config.vm.hostname = "ml.dora"
+  
+    config.vm.provider "virtualbox" do |vb|
+        vb.name = "ml.dora"
+        vb.cpus = 2
+        vb.memory = "2048"
+    end
+end
+```
+Init VM: `vagrant up` then `vagrant ssh`
+
+Start API Server:
+
+```shell
+cd cd DoraMatching-API-ML/
+source python38/bin/activate # active env
+python3 app.py # start server
+```
