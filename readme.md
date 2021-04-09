@@ -50,7 +50,7 @@ Init VM: `vagrant up` then `vagrant ssh`
 Start API Server:
 
 ```shell
-cd cd DoraMatching-API-ML/
+cd DoraMatching-API-ML/
 source python38/bin/activate # active env
 python3 app.py # start server
 ```
