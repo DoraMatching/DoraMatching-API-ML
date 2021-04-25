@@ -20,12 +20,13 @@ cp ./vietnamese_dash $HOME/nltk_data/corpora/stopwords/vietnamese_dash
 ## For Raspbian OS
 
 ```shell
+# Install dependencies
 sudo apt-get install libatlas-base-dev
 ```
 
 ## For Vagrant box
 
-Recommend: cpus>=2, memory>=2GB
+Recommend: cpus>=1, memory>=1GB
 
 ```ruby
 # Vagranfile
